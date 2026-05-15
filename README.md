@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="Images/Logos/FBD-PS2-Button-Butler-Logo.png">
-    <source media="(prefers-color-scheme: light)" srcset="Images/Logos/FBD-PS2-Button-Butler-Logo-NoBack-1024.png">
+    <source media="(prefers-color-scheme: dark)" srcset="Images/Logos/FBD-PS2-Button-Butler-Logo-White-1024.png">
+    <source media="(prefers-color-scheme: light)" srcset="Images/Logos/FBD-PS2-Button-Butler-Logo.png">
     <img src="Images/Logos/FBD-PS2-EtherDrive-Logo.png" alt="FBD PS2-EtherDrive Logo" width="500">
   </picture>
 </p>
