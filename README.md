@@ -10,10 +10,10 @@ At its most basic level, Button Butler is a replacement/interposer for the PS2 p
 
 ## Project Status
 
-> **Status:** Early development / concept documentation  
-> **Hardware:** In planning and prototype stages  
-> **Firmware:** In planning  
-> **Commercial use:** Intended to become a future FBD product  
+**Status:** Early development / concept documentation  
+**Hardware:** In planning and prototype stages  
+**Firmware:** In planning  
+**Commercial use:** Intended to become a future FBD product  
 
 This repository is being used to document the idea, track development, organize hardware revisions, and preserve the design direction as the project grows.
 
@@ -105,6 +105,8 @@ Instead of adding a bunch of external switches, Button Butler gives the build on
 ## Integration Levels
 
 Button Butler is intended to support multiple levels of installation.
+
+---
 
 ### Level 1: Basic Button Interposer
 
@@ -281,6 +283,8 @@ This would allow advanced builds to show useful health information on the touchs
 
 The project may eventually include several boards.
 
+---
+
 ### Button Interposer Board
 
 The main board that connects to the PS2 power/reset button circuit.
@@ -412,6 +416,136 @@ This is not intended to be a gimmick. The goal is to solve real problems that co
 
 ---
 
+## Repository Layout
+
+| Folder | Purpose |
+| --- | --- |
+| `Documents/` | General project notes and design documentation |
+| `Hardware/` | PCB concepts, schematics, KiCad files, and board notes |
+| `Firmware/` | PIC firmware, touchscreen firmware, and protocol notes |
+| `Images/` | Logos, concept art, board renders, and install photos |
+| `Manufacturing/` | BOMs, assembly notes, QA checklists, and release planning |
+| `Test-Data/` | Button tests, UART logs, power measurements, and validation data |
+| `References/` | Datasheets, PS2 board notes, and related research |
+
+---
+
+## Suggested Folder Structure
+
+| Path | Purpose |
+| --- | --- |
+| `Documents/01-Project-Overview.md` | High-level overview of the Button Butler project |
+| `Documents/02-Integration-Levels.md` | Basic, intermediate, and touchscreen-based install levels |
+| `Documents/03-Button-Behavior.md` | Notes for short press, long press, lid switch behavior, and special modes |
+| `Documents/04-Touchscreen-Control.md` | Touchscreen control ideas, menu layout, and possible UI functions |
+| `Documents/05-UART-and-IO-Architecture.md` | UART, digital I/O, and expansion communication notes |
+| `Documents/06-Power-Management.md` | Power control ideas for video boards and internal accessories |
+| `Documents/07-Mod-Control-Examples.md` | Example control cases for BlueRetro, ChipSlayer, Bluetooth audio, and other mods |
+| `Documents/08-Installation-Goals.md` | Install-friendly design goals and shell-modification limits |
+| `Documents/09-Future-Expansion.md` | Future ideas and possible expansion features |
+| `Hardware/Button-Interposer/` | Base power/reset button interposer board files |
+| `Hardware/IO-Expansion-Board/` | Raw I/O expansion board files |
+| `Hardware/Touchscreen-Hub/` | Touchscreen control hub notes and hardware files |
+| `Hardware/Power-Management/` | Accessory power-control board notes |
+| `Firmware/PIC-Button-Interposer/` | Firmware for the base PIC interposer |
+| `Firmware/Touchscreen-Controller/` | Firmware for the touchscreen controller |
+| `Firmware/Protocol-Notes/` | UART command ideas and communication notes |
+| `Manufacturing/BOM/` | Bills of materials |
+| `Manufacturing/Assembly-Notes/` | Assembly instructions and install notes |
+| `Manufacturing/QA-Checklist.md` | Testing checklist for completed boards |
+| `Test-Data/` | Logs, measurements, and validation data |
+| `References/` | Datasheets, pinouts, and research notes |
+
+---
+
+## Current Development Focus
+
+The first development focus is the base Button Interposer board.
+
+Initial goals:
+
+- Intercept the PS2 power/reset button
+- Detect button press behavior
+- Monitor lid switch state
+- Provide at least one UART connection
+- Provide digital outputs for mod control
+- Keep the install clean and simple
+- Prove the concept before adding the touchscreen layer
+
+---
+
+## Long-Term Vision
+
+The long-term vision is for Button Butler to become the central control system for premium FBD PS2 builds.
+
+Instead of every mod needing its own switch, LED, or external access point, Button Butler becomes the smart interface between the user, the console, and the internal mods.
+
+At the basic level, it is a smarter power/reset button.
+
+At the advanced level, it is the control center for the whole console.
+
+---
+
+## Possible Future Touchscreen Pages
+
+The touchscreen layer could eventually include several pages or modes.
+
+Possible pages:
+
+- Main power page
+- Reset page
+- Modchip / ChipSlayer page
+- BlueRetro page
+- Bluetooth audio page
+- SD2PSX page
+- RGB lighting page
+- Video output power page
+- Service page
+- Diagnostic page
+- Laser feedback page
+- Settings page
+
+These pages are only concept ideas at this stage.
+
+---
+
+## Possible Button Actions
+
+Possible button actions may include:
+
+- Short press
+- Long press
+- Double press
+- Press while lid is open
+- Press while console is off
+- Press while console is on
+- Press and hold during startup
+- Touchscreen-requested virtual button press
+
+Each action could be mapped to a different function depending on the build.
+
+---
+
+## Possible Outputs
+
+Button Butler may control outputs for:
+
+- Modchip enable
+- ChipSlayer enable
+- Bluetooth audio enable
+- Bluetooth audio pairing
+- BlueRetro enable
+- RGB lighting
+- Status LEDs
+- Chime or buzzer output
+- Accessory power enable
+- RetroGEM power control
+- ElectronAnalog power control
+- SD2PSX display or control functions
+- Future laser protection or feedback boards
+
+---
+
 ## Important Notes
 
 This project is experimental and under active development.
@@ -447,13 +581,18 @@ Button Butler may eventually interface with or support other FBD PS2 projects, i
 
 ---
 
-## Repository Layout
+## Credits
 
-```text
-Documents/      General project notes and design documentation
-Hardware/       PCB concepts, schematics, KiCad files, and board notes
-Firmware/       PIC firmware, touchscreen firmware, and protocol notes
-Images/         Logos, concept art, board renders, and install photos
-Manufacturing/  BOMs, assembly notes, QA checklists, and release planning
-Test-Data/      Button tests, UART logs, power measurements, and validation data
-References/     Datasheets, PS2 board notes, and related research
+Project by **Fat Bald Dad / FBD Retro Game**.
+
+This project is part of ongoing PlayStation 2 modding research, experimentation, and custom console development.
+
+---
+
+## Disclaimer
+
+This project is not affiliated with Sony, PlayStation, RetroGEM, BlueRetro, SD2PSX, or any other third-party project mentioned in this repository.
+
+PlayStation 2 and related names belong to their respective owners.
+
+This project involves internal console modification and should only be attempted by people comfortable with electronics, soldering, and hardware troubleshooting.
