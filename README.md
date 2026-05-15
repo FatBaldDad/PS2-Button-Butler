@@ -1,3 +1,11 @@
+<p align="center">
+  <img
+    src="Images/Logos/FBD%20PS2%20Button%20Buttler.svg"
+    alt="FBD PS2 Button Butler Logo"
+    width="25%"
+  />
+</p>
+
 # FBD PS2 Button Butler
 
 **FBD PS2 Button Butler** is a modular PlayStation 2 power/reset button interposer, I/O controller, and optional touchscreen control hub designed for advanced internal PS2 mods.
