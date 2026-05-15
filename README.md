@@ -1,9 +1,9 @@
 <p align="center">
-  <img
-    src="Images/Logos/FBD%20PS2%20Button%20Buttler.svg"
-    alt="FBD PS2 Button Butler Logo"
-    width="25%"
-  />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="Images/Logos/FBD-PS2-EtherDrive-Logo-Dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="Images/Logos/FBD-PS2-EtherDrive-Logo.png">
+    <img src="Images/Logos/FBD-PS2-EtherDrive-Logo.png" alt="FBD PS2-EtherDrive Logo" width="500">
+  </picture>
 </p>
 
 # FBD PS2 Button Butler
