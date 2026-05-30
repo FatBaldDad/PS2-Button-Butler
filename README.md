@@ -1,614 +1,83 @@
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="Images/Logos/FBD-PS2-Button-Butler-Logo-White-1024.png">
-    <source media="(prefers-color-scheme: light)" srcset="Images/Logos/FBD-PS2-Button-Butler-Logo.png">
-    <img src="Images/Logos/FBD-PS2-EtherDrive-Logo.png" alt="FBD PS2-EtherDrive Logo" width="350">
-  </picture>
+  <img src="Images/Logos/FBD-PS2-Button-Butler-Logo.png" alt="FBD PS2 Button Butler logo" width="320">
 </p>
 
-# FBD PS2 Button Butler
+# PS2-Button-Butler
 
-**FBD PS2 Button Butler** is a modular PlayStation 2 power/reset button interposer, I/O controller, and optional touchscreen control hub designed for advanced internal PS2 mods.
+PS2-Button-Butler is an FBD / Fat Bald Dad project focused on a PlayStation 2 power/reset button interposer, internal mod-management, and optional control-hub concept for cleaner custom console builds.
 
-This project is currently a **work in progress** and is one of my largest PlayStation 2 modding projects. The goal is to create a flexible FBD hardware platform that can scale from a simple power/reset button behavior controller all the way up to a full touchscreen-based mod management system.
+The project is aimed at exploring better ways to manage internal PS2 modifications while reducing extra switches, buttons, holes, and external controls.
 
-At its most basic level, Button Butler is a replacement/interposer for the PS2 power/reset button circuit. At its highest level, it becomes a central control system for managing internal mods, lighting, Bluetooth features, power states, and future feedback systems.
+> [!IMPORTANT]
+> PS2-Button-Butler is currently in private development.
+>
+> This public repository exists to document the project name, ownership, development status, and public-facing goals of the FBD PS2-Button-Butler project.
+>
+> This is not an open-source hardware, firmware, touchscreen UI, or manufacturing release at this time.
+>
+> Production hardware files, PCB files, Gerber files, KiCad design files, firmware source, UI source, manufacturing files, detailed installation methods, test data, and internal development notes are intentionally not included.
+>
+> No permission is granted to manufacture, clone, sell, rehost, redistribute, or create derivative hardware, firmware, software, UI, or products based on this project without written permission from Fat Bald Dad / FBD Retro Game.
 
----
+## Project Purpose
 
-## Project Status
+PS2-Button-Butler exists as a long-term FBD project exploring cleaner internal control options for PlayStation 2 systems. The goal is to centralize core console-control ideas in a way that supports tidy builds and reduces the need for additional external controls.
 
-**Status:** Early development / concept documentation  
-**Hardware:** In planning and prototype stages  
-**Firmware:** In planning  
-**Commercial use:** Intended to become a future FBD product  
+## What PS2-Button-Butler Is Trying to Do
 
-This repository is being used to document the idea, track development, organize hardware revisions, and preserve the design direction as the project grows.
+At a high level, the project is intended to explore how the original PS2 front-button experience can be extended into a smarter internal control point for advanced console modifications. That includes the broader idea of managing internal mods from a cleaner, more integrated platform while keeping the public-facing project description free from implementation details.
 
----
+## Current Development Status
 
-## What Is Button Butler?
+PS2-Button-Butler is currently in private development. Active design work, prototypes, internal documentation, and development history are maintained outside this public repository.
 
-Button Butler is intended to sit between the PlayStation 2 console and the original power/reset button behavior.
+This repository is not currently an open-source hardware, firmware, touchscreen UI, or manufacturing release.
 
-Instead of the button only doing what Sony originally designed it to do, Button Butler allows the button behavior to be intercepted, modified, expanded, or passed through depending on the console state and installed mods.
+## Public Repository Purpose
 
-For example:
+This public repository exists for project identification, ownership record, brand awareness, community visibility, and high-level documentation. It serves as the public claim and announcement space for the PS2-Button-Butler name and project direction while private development continues elsewhere.
 
-- Pressing the button normally can still power or reset the console.
-- Holding the button could trigger a different function.
-- Pressing the button while the lid switch is open could trigger a special mode.
-- Button behavior could be blocked, redirected, or used to control another mod.
-- A touchscreen could take full control of console and mod behavior.
+## What Is Not Public Yet
 
-The goal is to give custom PS2 builds more control without drilling extra holes or adding a pile of switches to the shell.
+Production hardware files, PCB files, Gerbers, KiCad files, firmware, touchscreen UI source, manufacturing files, detailed installation methods, test data, and internal development notes are intentionally not included here.
 
----
+No permission is granted to manufacture, clone, sell, rehost, redistribute, or create derivative hardware, firmware, software, UI, or products from this project without written permission from Fat Bald Dad / FBD Retro Game.
 
-## Core Idea
+## Public Folder Status
 
-The base version of Button Butler is an interposer board with a small microcontroller, likely a PIC, that provides:
+The folders in this repository are public placeholders only. They are present to reserve structure for future high-level documentation without exposing private development materials.
 
-- Power/reset button monitoring
-- Power/reset behavior control
-- UART communication
-- Digital inputs
-- Digital outputs
-- Lid switch awareness
-- Mod enable/disable outputs
-- Expansion support for other internal boards
+- `Documents/` — public placeholder only
+- `Firmware/` — public placeholder only
+- `Hardware/` — public placeholder only
+- `Images/` — safe public branding only
+- `Manufacturing/` — public placeholder only
+- `References/` — public placeholder only
+- `Test-Data/` — public placeholder only
 
-This allows the PS2 power button to become more than just a power/reset button.
+## Community Feedback
 
-It becomes a programmable control point for the whole build.
+Public feedback is welcome in the form of high-level discussion, compatibility observations, documentation corrections, and references to already-public information that may help shape future public documentation.
 
----
+## Not Currently Accepted
 
-## Why This Exists
+This repository is not currently accepting hardware design submissions, firmware contributions, touchscreen UI contributions, PCB layout work, manufacturing files, installation methods, clone hardware designs, productized derivatives, or alternate implementations derived from private FBD work.
 
-Modern PS2 builds can include a lot of internal mods:
+## Relationship to Other FBD Projects
 
-- BlueRetro
-- SD2PSX
-- MemCard Pro 2 / MMCE-related setups
-- ModBo 5.0 or other modchips
-- ChipSlayer
-- Bluetooth audio
-- RGB lighting
-- RetroGEM
-- ElectronAnalog
-- Internal routers or network devices
-- Laser protection or feedback boards
-- Custom power systems
+PS2-Button-Butler is part of the broader family of FBD / Fat Bald Dad PlayStation 2 project work. Like other FBD project-claim repositories, this public repo is intended to preserve project identity and public visibility without publishing protected development materials before an intentional release decision is made.
 
-The problem is that every added feature usually needs one or more of the following:
+## License / Usage
 
-- A switch
-- A button
-- An LED
-- A hole in the shell
-- Extra wiring
-- A hard-to-reach internal control point
+This repository is distributed under the proprietary notice in `LICENSE`.
 
-Button Butler is intended to clean that up.
+It is provided for limited public reference, project identification, documentation tracking, community awareness, and discussion only. It is not a public grant of rights to manufacture, clone, redistribute, rehost, or derive products or development work from PS2-Button-Butler.
 
-Instead of adding a bunch of external switches, Button Butler gives the build one smarter control system.
+## Project Owner
 
----
+Project owner: Burch Goldner / Fat Bald Dad  
+Brand: FBD Retro Game / Fat Bald Dad
 
-## Main Goals
+## Future Direction
 
-- Keep PS2 installs clean and simple
-- Reduce the need to drill or cut extra holes in the PS2 shell
-- Reuse the original power/reset button as a smart control input
-- Support both simple and advanced installs
-- Allow different mods to be turned on or off from one system
-- Add optional touchscreen control for premium builds
-- Provide raw digital I/O for lighting, control signals, and future features
-- Help manage heat and power usage inside heavily modified consoles
-- Create a true FBD-branded PS2 mod platform
-
----
-
-## Integration Levels
-
-Button Butler is intended to support multiple levels of installation.
-
----
-
-### Level 1: Basic Button Interposer
-
-The simplest version controls or modifies the normal PS2 power/reset button behavior.
-
-Possible functions:
-
-- Pass through normal button behavior
-- Block button behavior under certain conditions
-- Detect short press / long press
-- Detect lid switch state
-- Trigger an output when a button condition is met
-- Provide a UART connection for future control or debugging
-
-This version is intended to be the easiest to install.
-
----
-
-### Level 2: Button Interposer With I/O Control
-
-The next level adds general-purpose outputs and inputs.
-
-Possible uses:
-
-- Enable or disable ChipSlayer
-- Turn a modchip on or off
-- Trigger Bluetooth audio pairing
-- Enable or disable Bluetooth audio
-- Turn RGB lighting on or off
-- Control status LEDs
-- Trigger a chime or buzzer circuit
-- Control internal power rails
-- Detect lid switch or service mode states
-
-This version turns the power/reset button into a basic internal mod controller.
-
----
-
-### Level 3: Touchscreen Control Hub
-
-The highest level adds a touchscreen interface.
-
-The touchscreen could control:
-
-- Console power on/off
-- Console reset
-- RGB lighting
-- Bluetooth audio enable/disable
-- Bluetooth audio pairing
-- BlueRetro enable/disable
-- BlueRetro channel control
-- Modchip enable/disable
-- ChipSlayer enable/disable
-- SD2PSX information or control
-- RetroGEM or ElectronAnalog power management
-- Laser feedback from future LazyrSavre-style boards
-- Service or diagnostic pages
-
-This turns Button Butler into a full control panel for advanced FBD PS2 builds.
-
----
-
-## Example Use Cases
-
-### Lid Switch + Power Button Behavior
-
-One possible behavior:
-
-If the lid switch is open and the power button is pressed, Button Butler could block the normal button behavior and perform a different action instead.
-
-Examples:
-
-- Enable ChipSlayer
-- Disable ChipSlayer
-- Put Bluetooth audio into pairing mode
-- Toggle RGB lighting
-- Enter a service menu
-- Send a UART command to another board
-
-This allows hidden functions without adding external buttons.
-
----
-
-### Bluetooth Audio Control
-
-Button Butler could provide outputs or commands for a Bluetooth audio board.
-
-Possible functions:
-
-- Turn Bluetooth audio on
-- Turn Bluetooth audio off
-- Enter pairing mode
-- Show pairing status on the touchscreen
-- Disable Bluetooth audio when not needed
-
----
-
-### BlueRetro Control
-
-Button Butler could work with internal BlueRetro installs.
-
-Possible functions:
-
-- Disable BlueRetro completely
-- Disable specific controller channels
-- Show BlueRetro status on a display
-- Provide touchscreen controls for controller-related options
-- Coordinate BlueRetro behavior with console power state
-
----
-
-### Modchip / ChipSlayer Control
-
-Button Butler could control systems such as ChipSlayer or other modchip enable/disable circuits.
-
-Possible functions:
-
-- Enable modchip
-- Disable modchip
-- Toggle ChipSlayer mode
-- Use touchscreen control instead of a physical switch
-- Use hidden button combinations for modchip state changes
-
----
-
-### RetroGEM / ElectronAnalog Power Management
-
-Button Butler could help manage power for internal video mods.
-
-Possible functions:
-
-- Power down RetroGEM or ElectronAnalog when the console is idle
-- Reduce heat inside the console
-- Save energy
-- Control video board power from the touchscreen
-- Coordinate power state with the PS2 console state
-
-This is especially useful in compact builds where heat management matters.
-
----
-
-### RGB and Lighting Control
-
-Button Butler can also act as a simple lighting controller.
-
-Possible functions:
-
-- Turn case lighting on/off
-- Control accent LEDs
-- Trigger status colors
-- Use lighting to show mod state
-- Use lighting to show console mode
-
----
-
-### Laser Feedback / LazyrSavre Expansion
-
-Future versions may allow Button Butler to display feedback from laser protection or diagnostic boards.
-
-Possible future data:
-
-- Laser activity state
-- Servo feedback
-- Warning status
-- Protection trigger status
-- Diagnostic information
-- Service mode feedback
-
-This would allow advanced builds to show useful health information on the touchscreen.
-
----
-
-## Hardware Blocks
-
-The project may eventually include several boards.
-
----
-
-### Button Interposer Board
-
-The main board that connects to the PS2 power/reset button circuit.
-
-Expected features:
-
-- PIC microcontroller
-- UART
-- Digital inputs
-- Digital outputs
-- Button input
-- Console control output
-- Lid switch input
-- Expansion connector
-
----
-
-### I/O Expansion Board
-
-A raw digital I/O board for extra functions.
-
-Possible uses:
-
-- Lighting control
-- Mod enable lines
-- Status LEDs
-- Relay or MOSFET control
-- Extra button inputs
-- Future expansion
-
----
-
-### Touchscreen Hub
-
-The advanced display/control layer.
-
-Possible features:
-
-- Round touchscreen interface
-- UART communication with Button Butler
-- Menu system
-- Mod control pages
-- Status display
-- Service pages
-- BlueRetro or SD2PSX display support
-
----
-
-### Power Management Board
-
-Optional power-control circuitry for internal devices.
-
-Possible uses:
-
-- Power down video mods when idle
-- Control internal accessory power
-- Reduce heat
-- Sequence power rails
-- Coordinate console power state with accessory power
-
----
-
-## Communication
-
-Button Butler is expected to use simple communication methods that are easy to implement and debug.
-
-Possible communication methods:
-
-- UART
-- Digital I/O
-- Simple command protocol
-- Future I2C or other expansion options if needed
-
-The first goal is reliability and ease of installation, not unnecessary complexity.
-
----
-
-## Design Philosophy
-
-Button Butler is being designed around the way real PS2 mods are installed.
-
-The priorities are:
-
-1. Easy installation
-2. Clean wiring
-3. Minimal shell modification
-4. Flexible control
-5. Reliable behavior
-6. Expandability
-7. Practical use in real customer builds
-
-This is not intended to be a gimmick. The goal is to solve real problems that come up when building heavily modified PS2 consoles.
-
----
-
-## Project Goals
-
-- Create a simple base interposer board
-- Define button behavior modes
-- Define UART command ideas
-- Design a raw I/O expansion board
-- Test outputs with common PS2 mods
-- Add touchscreen support
-- Add control profiles for different build types
-- Test heat and power management features
-- Build documentation for installation and manufacturing
-- Develop this into a future FBD product
-
----
-
-## Planned Features
-
-- Power/reset button interposer
-- Button press detection
-- Short press / long press behavior
-- Lid switch detection
-- UART communication
-- Digital I/O expansion
-- Modchip control
-- ChipSlayer control
-- Bluetooth audio control
-- BlueRetro control
-- RGB control
-- RetroGEM / ElectronAnalog power management
-- SD2PSX display/control support
-- Laser feedback display support
-- Touchscreen UI
-- Build-specific configuration profiles
-
----
-
-## Repository Layout
-
-| Folder | Purpose |
-| --- | --- |
-| `Documents/` | General project notes and design documentation |
-| `Hardware/` | PCB concepts, schematics, KiCad files, and board notes |
-| `Firmware/` | PIC firmware, touchscreen firmware, and protocol notes |
-| `Images/` | Logos, concept art, board renders, and install photos |
-| `Manufacturing/` | BOMs, assembly notes, QA checklists, and release planning |
-| `Test-Data/` | Button tests, UART logs, power measurements, and validation data |
-| `References/` | Datasheets, PS2 board notes, and related research |
-
----
-
-## Suggested Folder Structure
-
-| Path | Purpose |
-| --- | --- |
-| `Documents/01-Project-Overview.md` | High-level overview of the Button Butler project |
-| `Documents/02-Integration-Levels.md` | Basic, intermediate, and touchscreen-based install levels |
-| `Documents/03-Button-Behavior.md` | Notes for short press, long press, lid switch behavior, and special modes |
-| `Documents/04-Touchscreen-Control.md` | Touchscreen control ideas, menu layout, and possible UI functions |
-| `Documents/05-UART-and-IO-Architecture.md` | UART, digital I/O, and expansion communication notes |
-| `Documents/06-Power-Management.md` | Power control ideas for video boards and internal accessories |
-| `Documents/07-Mod-Control-Examples.md` | Example control cases for BlueRetro, ChipSlayer, Bluetooth audio, and other mods |
-| `Documents/08-Installation-Goals.md` | Install-friendly design goals and shell-modification limits |
-| `Documents/09-Future-Expansion.md` | Future ideas and possible expansion features |
-| `Hardware/Button-Interposer/` | Base power/reset button interposer board files |
-| `Hardware/IO-Expansion-Board/` | Raw I/O expansion board files |
-| `Hardware/Touchscreen-Hub/` | Touchscreen control hub notes and hardware files |
-| `Hardware/Power-Management/` | Accessory power-control board notes |
-| `Firmware/PIC-Button-Interposer/` | Firmware for the base PIC interposer |
-| `Firmware/Touchscreen-Controller/` | Firmware for the touchscreen controller |
-| `Firmware/Protocol-Notes/` | UART command ideas and communication notes |
-| `Manufacturing/BOM/` | Bills of materials |
-| `Manufacturing/Assembly-Notes/` | Assembly instructions and install notes |
-| `Manufacturing/QA-Checklist.md` | Testing checklist for completed boards |
-| `Test-Data/` | Logs, measurements, and validation data |
-| `References/` | Datasheets, pinouts, and research notes |
-
----
-
-## Current Development Focus
-
-The first development focus is the base Button Interposer board.
-
-Initial goals:
-
-- Intercept the PS2 power/reset button
-- Detect button press behavior
-- Monitor lid switch state
-- Provide at least one UART connection
-- Provide digital outputs for mod control
-- Keep the install clean and simple
-- Prove the concept before adding the touchscreen layer
-
----
-
-## Long-Term Vision
-
-The long-term vision is for Button Butler to become the central control system for premium FBD PS2 builds.
-
-Instead of every mod needing its own switch, LED, or external access point, Button Butler becomes the smart interface between the user, the console, and the internal mods.
-
-At the basic level, it is a smarter power/reset button.
-
-At the advanced level, it is the control center for the whole console.
-
----
-
-## Possible Future Touchscreen Pages
-
-The touchscreen layer could eventually include several pages or modes.
-
-Possible pages:
-
-- Main power page
-- Reset page
-- Modchip / ChipSlayer page
-- BlueRetro page
-- Bluetooth audio page
-- SD2PSX page
-- RGB lighting page
-- Video output power page
-- Service page
-- Diagnostic page
-- Laser feedback page
-- Settings page
-
-These pages are only concept ideas at this stage.
-
----
-
-## Possible Button Actions
-
-Possible button actions may include:
-
-- Short press
-- Long press
-- Double press
-- Press while lid is open
-- Press while console is off
-- Press while console is on
-- Press and hold during startup
-- Touchscreen-requested virtual button press
-
-Each action could be mapped to a different function depending on the build.
-
----
-
-## Possible Outputs
-
-Button Butler may control outputs for:
-
-- Modchip enable
-- ChipSlayer enable
-- Bluetooth audio enable
-- Bluetooth audio pairing
-- BlueRetro enable
-- RGB lighting
-- Status LEDs
-- Chime or buzzer output
-- Accessory power enable
-- RetroGEM power control
-- ElectronAnalog power control
-- SD2PSX display or control functions
-- Future laser protection or feedback boards
-
----
-
-## Important Notes
-
-This project is experimental and under active development.
-
-Do not install prototype hardware into a customer console without proper testing.
-
-This repository may include unfinished ideas, untested circuits, early board layouts, and design notes that are subject to change.
-
----
-
-## Intellectual Property / Project Notice
-
-This repository documents the development of the FBD PS2 Button Butler concept and related hardware ideas.
-
-Button Butler is intended to become an FBD-branded project and possible commercial product.
-
-Unless a specific license is added later, this repository should be treated as documentation of an in-progress design, not as permission to manufacture or sell derivative products.
-
----
-
-## Related FBD Projects
-
-Button Butler may eventually interface with or support other FBD PS2 projects, including:
-
-- ChipSlayer
-- PowerOR
-- LazyrSavre
-- Internal BlueRetro installs
-- Internal SD2PSX installs
-- PS2 Ultra Slim builds
-- PS2 Blue Steel-style builds
-- RetroGEM / ElectronAnalog power management
-
----
-
-## Credits
-
-Project by **Fat Bald Dad / FBD Retro Game**.
-
-This project is part of ongoing PlayStation 2 modding research, experimentation, and custom console development.
-
----
-
-## Disclaimer
-
-This project is not affiliated with Sony, PlayStation, RetroGEM, BlueRetro, SD2PSX, or any other third-party project mentioned in this repository.
-
-PlayStation 2 and related names belong to their respective owners.
-
-This project involves internal console modification and should only be attempted by people comfortable with electronics, soldering, and hardware troubleshooting.
-
-## AI Assistance and Attribution Disclaimer
-
-This project uses AI tools to help with writing, organization, documentation, research, code examples, and design planning. While I review and edit the information, some details may still be incorrect, incomplete, or outdated.
-
-Not all ideas, code, research, methods, or technical information in this project should be credited only to me. This project may reference, build on, or be inspired by community knowledge, open-source projects, datasheets, forum posts, Discord discussions, manufacturer documentation, and the work of other developers and modders.
-
-Credit will be given whenever a source is known. If something is missing credit or needs correction, please let me know so I can update the documentation.
+Public documentation may expand over time as the project matures. Any future public release scope, if announced, will be defined intentionally and on FBD terms.
